@@ -1,0 +1,27 @@
+{
+  "name": "luxury-furniture-e-commerce-website",
+  "version": "1.0.0",
+  "description": "Luxury Furniture E-commerce Website",
+  "scripts": {
+    "dev:backend": "cd Backend && npm run dev",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "install-all": "npm install && cd Backend && npm install && cd ../Frontend && npm install",
+    "install-backend": "cd Backend && npm install",
+    "install-frontend": "cd Frontend && npm install",
+    "build-backend": "cd Backend && npm run build",
+    "build-frontend": "cd Frontend && npm run build",
+    "build": "npm run build-backend && npm run build-frontend",
+    "start": "cd Backend && npm start"
+  },
+  "keywords": [
+    "ecommerce",
+    "furniture",
+    "luxury"
+  ],
+  "author": "Ranveer2k",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

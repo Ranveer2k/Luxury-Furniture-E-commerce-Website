@@ -1,0 +1,34 @@
+{
+  "name": "aurelle-maison-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --no-deprecation --watch src/server.js",
+    "start": "node --no-deprecation src/server.js",
+    "seed": "node --no-deprecation src/scripts/seedDatabase.js",
+    "test-images": "node --no-deprecation src/scripts/testImageFetching.js",
+    "demo": "node --no-deprecation src/scripts/demo.js"
+  },
+  "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "^15.3.5",
+    "axios": "^1.15.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.1",
+    "express-validator": "^7.2.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "razorpay": "^2.9.4",
+    "stripe": "^18.4.0",
+    "swagger-jsdoc": "^7.0.0-rc.6",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.15.0"
+  }
+}
